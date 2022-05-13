@@ -1,0 +1,94 @@
+.more {
+    &__title {
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #0f0920;
+    }
+    &__list-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__list {
+        margin: 0;
+        list-style: none;
+        &--big {
+            padding: 0 30px 0 0;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 760px;
+            box-sizing: border-box;
+        }
+        &--small {
+            padding: 0;
+            max-width: 340px;
+        }
+    }
+    &__item {
+        &--big {
+        }
+        &--small {
+            &:not(:first-child) {
+                padding-top: 20px;
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(15, 9, 32, 0.1);
+            }
+        }
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+        &:hover,
+        :focus {
+            opacity: 0.7;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+    }
+    &__img {
+        margin-bottom: 15px;
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    &__topic {
+        margin: 0;
+        margin-right: auto;
+        padding-right: 15px;
+        max-width: 80%;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #25008f;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+    }
+    &__meta {
+        max-width: 20%;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #0f0920;
+    }
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #0f0920;
+    }
+}

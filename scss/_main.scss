@@ -1,0 +1,11 @@
+.page-content {
+	&__article {
+	}
+	&__more {
+		padding-top: 50px;
+		padding-bottom: 57px;
+	}
+}
+
+@import "_article";
+@import "_more";
